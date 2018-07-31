@@ -1,0 +1,145 @@
+<div>
+<form #empForm="ngForm" (ngSubmit)="onAddEmployee(empForm)" >
+<div class="container">
+    <div class="col-sm-8">
+    <h2 align="center" style="color: black;">Register Employee</h2>
+    
+  
+    <div class="form-group">
+        <label for="id">Login ID:</label>
+        <input type="email" id="id" class="form-control"
+                      name="mail_id"
+                      ngModel
+                      #mail_id="ngModel">
+      </div>
+    
+      <div class="form-group">
+        <label for="pa">Password:</label>
+        <input type="password" id="pa" class="form-control"
+                  name="password"
+                  ngModel 
+                  #password="ngModel">
+      </div>
+
+  <div class="form-group">
+      <label for="etype">Employee Type:</label>
+        <input type="radio"  
+                    name="typeid"
+                    ngModel
+                    #typeid="ngModel" value="102">Manager
+        <input type="radio"
+                    name="typeid"
+                    ngModel
+                    #typeid="ngModel" value="103">Developer
+        <input type="radio"
+                    name="typeid"
+                    ngModel
+                    #typeid="ngModel" value="104">Tester
+  </div>
+    
+      <div class="form-group">
+        <label for="fn">First Name:</label>
+        <input type="text" id="fn" class="form-control"
+                  name="fname"
+                  ngModel 
+                  #fname="ngModel">
+      </div>
+
+      <div class="form-group">
+          <label for="ln">Last Name:</label>
+          <input type="text" id="ln" class="form-control"
+                      name="lname"
+                      ngModel
+                      #lname="ngModel">
+        </div>
+      
+        <div class="form-group">
+          <label for="db">Date of Birth:</label>
+          <input type="date" id="db" class="form-control"
+                    name="dob"
+                    ngModel 
+                    #salary="ngModel">
+        </div>
+        <div class="form-group">
+            <label for="hn">House Number:</label>
+            <input type="text" id="hn" class="form-control"
+                        name="housenum"
+                        ngModel
+                        #housenum="ngModel">
+          </div>
+        
+          <div class="form-group">
+            <label for="sen">Street Name:</label>
+            <input type="text" id="sen" class="form-control"
+                      name="street"
+                      ngModel 
+                      #street="ngModel">
+          </div>
+        </div>
+    </div>
+<div class="container">
+    <div class="col-sm-6">
+          <div class="form-group">
+              <label for="st">State Name:</label>
+              <input type="text" id="st" class="form-control"
+                          name="state"
+                          ngModel
+                          #state="ngModel">
+            </div>
+          
+            <div class="form-group">
+              <label for="cn">Country Name:</label>
+              <input type="text" id="cn" class="form-control"
+                        name="country"
+                        ngModel 
+                        #country="ngModel">
+            </div>
+            <div class="form-group">
+                <label for="pc">Pin Code:</label>
+                <input type="text" id="pc" class="form-control"
+                            name="pincode"
+                            ngModel
+                            #pincode="ngModel">
+              </div>
+            
+              <div class="form-group">
+                <label for="con">Contact Number:</label>
+                <input type="text" id="con" class="form-control"
+                          name="contact_num"
+                          ngModel 
+                          #contact_num="ngModel">
+              </div>
+
+              <div class="form-group">
+                  <label for="sq">Security Question:</label>
+                  <input type="text" id="sq" class="form-control"
+                              name="ques_id" value="ques_id"
+                              ngModel
+                              #ques_id="ngModel">
+                </div>
+              
+                <div class="form-group">
+                  <label for="sqa">Security Question Answer:</label>
+                  <input type="text" id="sqa" class="form-control"
+                            name="security_quesans"
+                            ngModel 
+                            #security_quesans="ngModel">
+                </div>
+
+            <div class="form-group">
+                <label for="rd">Registration Date:</label>
+                <input type="date" id="rd" class="form-control"
+                            name="reg_date"
+                            ngModel
+                            #reg_date="ngModel">
+              </div>
+            
+  <div class="form-group">
+    <input type="submit" class="btn btn-primary active" value="Register">
+    </div>
+
+    <div class="form-group">
+        <input type="reset" class="btn btn-primary active" value="Reset">
+        </div>
+</div></div></form>
+</div>
